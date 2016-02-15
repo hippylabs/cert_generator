@@ -4,11 +4,11 @@ services:
   - docker
 
 git:
-  depth: 1
+  depth: 3
 
 before_script:
   - docker pull jordi/openssl
-  - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
+  - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS quay.io
 
 script:
   - docker build -t quay.io/hippylabs/cert_generator:latest .
