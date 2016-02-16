@@ -31,7 +31,7 @@ case $1 in
 
       (cat openssl.conf; echo "DNS.3 = $domain"; echo "DNS.4 = *.$domain") > openssl.conf.tmp
       mv openssl.conf.tmp openssl.conf
-      cat openssl.conf
+
       openssl genrsa -aes256 \
             -passout pass:$password \
             -out /crt/$domain/server.key 2048
