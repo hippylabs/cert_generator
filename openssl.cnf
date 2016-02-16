@@ -10,8 +10,8 @@ database          = $dir/index.txt
 serial            = $dir/serial
 
 # The root key and root certificate.
-private_key       = $dir/crt/ca.key
-certificate       = $dir/crt/ca.crt
+private_key       = /crt/ca.key
+certificate       = /crt/ca.crt
 
 # SHA-1 is deprecated, so use SHA-2 instead.
 default_md        = sha256
