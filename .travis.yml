@@ -7,7 +7,6 @@ git:
   depth: 3
 
 before_script:
-  - docker pull jordi/openssl
   - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS quay.io
 
 script:
